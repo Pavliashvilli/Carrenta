@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lvl1text0">Астон Мартин \n100000$</string>
+    <string name="lvl1text1">Ауди \n10000$</string>
+    <string name="lvl1text2">BMW \n15000$</string>
+    <string name="lvl1text3">Додж \n20000$</string>
+    <string name="lvl1text4">Kia \n9000$</string>
+    <string name="lvl1text5">Мазда \n8000$</string>
+    <string name="lvl1text6">Мерседес \n50000$</string>
+    <string name="lvl1text7">Ниссан \n80000$</string>
+    <string name="lvl1text8">Порше \n150000$</string>
+    <string name="lvl1text9">Тесла \n90000$</string>
+
+</resources>

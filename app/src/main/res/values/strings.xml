@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Carrenta</string>
+    <string name="start">Войти</string>
+    <string name="next">Следующая</string>
+    <string name="back">Назад</string>
+    <string name="Autificaton">Зарегистрироваться</string>
+    <string name="title_activity_new">NewActivity</string>
+    <string name="Level">Позиция :</string>
+    <string name="Level1">Каталог</string>
+    <string name="Levelone">Подборка автомобилей нашего магазина.\nКаталог автомобилей постепенно пополняется </string>
+    <string name="textcontinue">Продолжить</string>
+    <string-array name="Contacs">
+        <item>Александр  (технический специалист) </item>
+        <item>Пётр  (консультант)</item>
+        <item>Николай  (менеджер)</item>
+        <item>Ян \nДиректор</item>
+        <item>Владимир  (технический специалист)</item>
+        <item>Никита  (консультант)</item>
+        <item>Фёдр  (менеджер)</item>
+        <item>Алексей  (менеджер)</item>
+        <item>Иван  (технический специалист)</item>
+        <item>Дмитрий  (технический специалист)</item>
+        <item>Александр  (технический специалист) </item>
+        <item>Пётр  (консультант)</item>
+        <item>Николай  (менеджер)</item>
+        <item>Никита  (консультант)</item>
+        <item>Фёдр  (менеджер)</item>
+        <item>Алексей  (менеджер)</item>
+        <item>Иван  (технический специалист)</item>
+    </string-array>
+</resources>
