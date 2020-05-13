@@ -9,6 +9,7 @@
     <string name="Level1">Каталог</string>
     <string name="Levelone">Подборка автомобилей нашего магазина.\nКаталог автомобилей постепенно пополняется </string>
     <string name="textcontinue">Продолжить</string>
+    <string name="textsend">#</string>
     <string-array name="Contacs">
         <item>Александр  (технический специалист) </item>
         <item>Пётр  (консультант)</item>

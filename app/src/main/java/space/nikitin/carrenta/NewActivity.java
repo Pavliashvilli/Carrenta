@@ -3,16 +3,11 @@ package space.nikitin.carrenta;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.TextView;
 
 public class NewActivity extends AppCompatActivity {
@@ -25,19 +20,24 @@ public class NewActivity extends AppCompatActivity {
         Window w = getWindow();
         w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        Button button_back = (Button)findViewById(R.id.button_back);
-        button_back.setOnClickListener(new View.OnClickListener() {
+
+
+        TextView textView4 = (TextView)findViewById(R.id.textView4);
+        textView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 try {
-                    Intent intent = new Intent(NewActivity.this,MainActivity.class);
+                    Intent intent = new Intent(NewActivity.this, User_Reviews.class);
                     startActivity(intent);
                     finish();
-                }catch (Exception e) {
+
+                }catch (Exception e){
 
                 }
+
             }
         });
+
 
         //Perehod na legkovie
         TextView textView1 = (TextView)findViewById(R.id.textView1);
@@ -90,6 +90,7 @@ public class NewActivity extends AppCompatActivity {
             }
         });
         //konec
+
     }
     @Override
     public void onBackPressed (){

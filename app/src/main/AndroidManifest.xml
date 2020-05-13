@@ -21,6 +21,9 @@
 
         <activity android:name=".Maps" />
         <activity
+            android:name=".User_Reviews"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".Level1"
             android:screenOrientation="portrait" />
         <activity
