@@ -39,6 +39,7 @@
         implementation 'com.firebaseui:firebase-ui:0.6.2'
 
         implementation 'com.google.firebase:firebase-firestore:21.4.3'
+        implementation 'com.github.lguipeng:BubbleView:1.0.1'
 
     }
 

@@ -39,7 +39,7 @@
                     android:layout_marginRight="10dp"
                     android:background="@drawable/button_carlevels"
                     android:gravity="center"
-                    android:text="Отзывы"
+                    android:text="Чат"
                     android:textColor="@color/white"
                     android:textSize="24sp"
                     android:textStyle="bold" />
@@ -111,7 +111,7 @@
                             android:id="@+id/textView3"
                             android:layout_width="150dp"
                             android:layout_height="50dp"
-                            android:text="Контакты"
+                            android:text="Клиенты"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_carlevels"
                             android:textColor="@color/white"
