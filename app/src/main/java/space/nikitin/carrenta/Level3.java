@@ -19,10 +19,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.Random;
-
-public class Level1 extends AppCompatActivity {
-    String car_Aston = "Астон Мартин";
-    int coast_Aston = 1000;
+public class Level3  extends AppCompatActivity{
+    String car_Kia = " Kia Stinger";
+    int coast_Kia = 800;
 
 
     public int numCenter; //Переменная для картинки + текст
@@ -32,7 +31,7 @@ public class Level1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.universal);
+        setContentView(R.layout.activity_level3);
 
         //Создаем переменную text_levels
         TextView text_levels = findViewById(R.id.text_levels);
@@ -52,7 +51,7 @@ public class Level1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 try {
-                    Intent intent = new Intent(Level1.this,Renta.class);
+                    Intent intent = new Intent(Level3.this,Renta3.class);
                     startActivity(intent);
                     finish();
                 }catch (Exception e) {
@@ -65,12 +64,12 @@ public class Level1 extends AppCompatActivity {
 
 
         //Подключаем анимацию
-        final Animation a = AnimationUtils.loadAnimation(Level1.this,R.anim.alpha);
+        final Animation a = AnimationUtils.loadAnimation(Level3.this,R.anim.alpha);
 
 
-            numCenter = random.nextInt(4); //Генерируем число от 0 до 9
-            img_left.setImageResource(array.images1[numCenter]); //Достаем из массива картинку
-            text_center.setText(array.texts2[0]); //Достаем из массива текст
+        numCenter = random.nextInt(3); //Генерируем число от 0 до 9
+        img_left.setImageResource(array.images3[numCenter]); //Достаем из массива картинку
+        text_center.setText(array.texts1[4]); //Достаем из массива текст
 
         img_left.setOnTouchListener(new View.OnTouchListener(){
 
@@ -79,14 +78,14 @@ public class Level1 extends AppCompatActivity {
                 //Условие касания картинки - начало
                 if (motionEvent.getAction()==MotionEvent.ACTION_DOWN){
                     //если коснулся картинки -начало
-                    img_left.setImageResource(array.images1[numCenter]); //Достаем из массива картинку
-                    text_center.setText(array.texts2[0]);
+                    img_left.setImageResource(array.images3[numCenter]); //Достаем из массива картинку
+                    text_center.setText(array.texts1[4]);
 
                 } else if (motionEvent.getAction()==MotionEvent.ACTION_UP){
                     //если отпустил палец начало
-                    numCenter = random.nextInt(4);
-                    img_left.setImageResource(array.images1[numCenter]); //Достаем из массива картинку
-                    text_center.setText(array.texts2[0]);
+                    numCenter = random.nextInt(3);
+                    img_left.setImageResource(array.images3[numCenter]); //Достаем из массива картинку
+                    text_center.setText(array.texts1[4]);
                 }
                 //Условие касания картинки - конец
                 return true;
@@ -101,7 +100,7 @@ public class Level1 extends AppCompatActivity {
     @Override
     public void onBackPressed (){
         try {
-            Intent intent = new Intent(Level1.this,Brand_cars.class);
+            Intent intent = new Intent(Level3.this,Brand_cars.class);
             startActivity(intent);
             finish();
         }catch (Exception e) {

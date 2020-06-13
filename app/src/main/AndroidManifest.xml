@@ -24,7 +24,34 @@
             android:name=".User_Reviews"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".Level2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Level3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Сabinet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Renta"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Renta2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Renta3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Renta4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Brand_cars"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".Level1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Level4"
             android:screenOrientation="portrait" />
         <activity
             android:name=".NewActivity"

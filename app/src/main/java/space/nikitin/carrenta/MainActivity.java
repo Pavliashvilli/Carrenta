@@ -27,10 +27,11 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
     private final String TAG = "myLogs";
+    String email,error;
+    String password;
 
     private EditText ETemail;
     private EditText ETpassword;
@@ -55,6 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ETemail = (EditText) findViewById(R.id.et_email);
         ETpassword = (EditText) findViewById(R.id.et_password);
 
+
         Button startButton = findViewById(R.id.buttonStart);
         Button registerButton = findViewById(R.id.btn_registration);
 
@@ -64,15 +66,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
+
         if (view.getId() == R.id.buttonStart) {
-            signin(ETemail.getText().toString(), ETpassword.getText().toString());
+            email = ETemail.getText().toString();
+            password = ETpassword.getText().toString();
+            signin();
+            //signin(ETemail.getText().toString(), ETpassword.getText().toString());
         } else if (view.getId() == R.id.btn_registration) {
             registration(ETemail.getText().toString(), ETpassword.getText().toString());
         }
 
     }
 
-    public void signin(String email, String password) {
+    public void signin() {
         if (ETemail.length()>5 && ETpassword.length()>5) {
 
             Log.d(TAG, "start sign in");
@@ -80,6 +86,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
+                        error="/"+email+"/";
+                        System.out.println(error);
                         Toast.makeText(MainActivity.this, "Aвторизация успешна", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(MainActivity.this, NewActivity.class);
 
